@@ -1,0 +1,4 @@
+groq
+pandas
+streamlit
+git+https://github.com/openai/whisper.git
