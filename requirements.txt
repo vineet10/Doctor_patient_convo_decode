@@ -1,5 +1,6 @@
 groq
 streamlit
 torch
-io
+torchvision 
+torchaudio
 git+https://github.com/openai/whisper.git
