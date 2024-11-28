@@ -13,7 +13,7 @@ Original file is located at
 import whisper
 import os
 from groq import Groq
-
+import torch
 # Load the Whisper 'large' model for maximum accuracy
 print("Loading Whisper model...")
 whisper_model = whisper.load_model("base")
