@@ -4,4 +4,3 @@ torchaudio
 git+https://github.com/openai/whisper.git
 streamlit
 groq
-git+https://github.com/pytorch
