@@ -5,6 +5,7 @@ import streamlit as st
 import whisper
 import os
 from io import BytesIO
+from groq import Groq 
 
 
 # Load the Whisper model
