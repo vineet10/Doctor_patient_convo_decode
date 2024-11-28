@@ -7,8 +7,8 @@ Original file is located at
     https://colab.research.google.com/drive/1e5OvbwM1qImsucLhwnNNgNjEbJo8ULpT
 """
 
-!pip install git+https://github.com/openai/whisper.git
-!pip install groq
+#!pip install git+https://github.com/openai/whisper.git
+#!pip install groq
 
 import whisper
 import os
