@@ -7,10 +7,15 @@ import os
 from io import BytesIO
 from groq import Groq 
 
-api_key = st.secrets["API_KEY"]
+# Set up proxies (if required)
+os.environ["HTTP_PROXY"] = "http://proxy_url:proxy_port"
+os.environ["HTTPS_PROXY"] = "http://proxy_url:proxy_port"
+
+#api_key = st.secrets["API_KEY"]
 
 # Initialize Groq API client
-client = Groq(api_key=api_key)
+#client = Groq(api_key=api_key)
+client = Groq(api_key=st.secrets["API_KEY"])
 
 # Load the Whisper model
 @st.cache_resource
