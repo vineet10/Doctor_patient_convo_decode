@@ -15,7 +15,7 @@ import os
 from groq import Groq
 
 # Set up OpenAI API key
-api_key="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"
+api_key= st.secrets["API_KEY"]
 os.environ["OPENAI_API_KEY"] = api_key  # This line sets the environment variable
 # Load the Whisper 'large' model for maximum accuracy
 print("Loading Whisper model...")
@@ -58,7 +58,7 @@ def analyze_transcription(transcription):
 
     # Updated code to use the new OpenAI client interface
     client = Groq(
-    api_key="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"
+    api_key= st.secrets["API_KEY"]
      )
     response = client.chat.completions.create(
         model="llama3-8b-8192",
