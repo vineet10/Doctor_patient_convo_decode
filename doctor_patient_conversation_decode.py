@@ -68,7 +68,7 @@ def analyze_transcription(transcription):
     try:
         # Updated code to use the new OpenAI client interface
         client = Groq(
-        api_key= "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"
+        api_key= st.secrets["API_KEY"]
         )
         response = client.chat.completions.create(
         model="llama3-8b-8192",
