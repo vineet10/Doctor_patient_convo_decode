@@ -1,7 +1,14 @@
-groq
-torch --index-url https://download.pytorch.org/whl/cpu
-torchvision --index-url https://download.pytorch.org/whl/cpu
-torchaudio --index-url https://download.pytorch.org/whl/cpu
+# CPU-based PyTorch installation
+torch>=2.0.0 --index-url https://download.pytorch.org/whl/cpu
+torchvision>=0.15.0 --index-url https://download.pytorch.org/whl/cpu
+torchaudio>=2.0.0 --index-url https://download.pytorch.org/whl/cpu
+
+# Whisper from GitHub
 whisper @ git+https://github.com/openai/whisper.git
+
+# Streamlit for the app
 streamlit
+
+# Image processing and FFmpeg
 imageio[ffmpeg]
+groq
