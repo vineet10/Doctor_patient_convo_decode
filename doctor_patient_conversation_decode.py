@@ -3,6 +3,7 @@
 
 import streamlit as st
 import whisper
+import torch
 import os
 from io import BytesIO
 from groq import Groq 
