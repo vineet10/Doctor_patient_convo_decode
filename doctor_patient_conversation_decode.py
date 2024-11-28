@@ -7,7 +7,10 @@ import os
 from io import BytesIO
 from groq import Groq 
 
+api_key = st.secrets["API_KEY"]
 
+# Initialize Groq API client
+client = Groq(api_key=api_key)
 
 # Load the Whisper model
 @st.cache_resource
@@ -67,9 +70,9 @@ def analyze_transcription(transcription):
 
     try:
         # Updated code to use the new OpenAI client interface
-        client = Groq(
-        api_key= st.secrets["API_KEY"]
-        )
+         #client = Groq(
+         #api_key= st.secrets["API_KEY"]
+         #)
         response = client.chat.completions.create(
         model="llama3-8b-8192",
         messages=[
