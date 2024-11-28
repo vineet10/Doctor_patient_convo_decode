@@ -1,5 +1,5 @@
 groq
-pandas
 streamlit
 torch
+io
 git+https://github.com/openai/whisper.git
