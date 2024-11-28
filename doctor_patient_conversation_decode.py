@@ -14,9 +14,6 @@ import whisper
 import os
 from groq import Groq
 
-# Set up OpenAI API key
-api_key= st.secrets["API_KEY"]
-os.environ["OPENAI_API_KEY"] = api_key  # This line sets the environment variable
 # Load the Whisper 'large' model for maximum accuracy
 print("Loading Whisper model...")
 whisper_model = whisper.load_model("base")
