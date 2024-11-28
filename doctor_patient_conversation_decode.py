@@ -96,8 +96,19 @@ def main(audio_path):
     print("\nTranscription:\n", transcription)
     print("\nMedical Analysis:\n", analysis)
 
+
+import streamlit as st
+
+# Set up the file uploader for audio files
+st.title("Audio File Upload Example")
+st.write("Upload your audio file for processing.")
+
+uploaded_file = st.file_uploader("Choose an audio file", type=["mp3", "wav", "ogg", "m4a"])
+
+if uploaded_file is not None:
+    st.success("File uploaded successfully!")
 # Run the main workflow with your audio file
-main("doctor_patient_conversation.wav")  # Replace with your audio file path
+main(uploaded_file)  # Replace with your audio file path
 
 # Give the initial info like age, name, etc.
 
