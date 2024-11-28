@@ -14,7 +14,7 @@ from groq import Groq
 #api_key = st.secrets["API_KEY"]
 
 # Fetch the API key from Streamlit Secrets
-api_key = st.secrets["GROQ_API_KEY"]
+api_key = st.secrets["API_KEY"]
 
 # Initialize Groq API client
 client = Groq(api_key=api_key)
