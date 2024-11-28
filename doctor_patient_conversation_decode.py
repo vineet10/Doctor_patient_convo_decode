@@ -15,8 +15,8 @@ os.environ["HTTPS_PROXY"] = "http://proxy_url:proxy_port"
 #api_key = st.secrets["API_KEY"]
 
 # Initialize Groq API client
-#client = Groq(api_key=api_key)
-client = Groq(api_key=st.secrets["API_KEY"])
+api_key = st.secrets["API_KEY"]
+client = Groq(api_key=api_key)
 
 # Load the Whisper model
 @st.cache_resource
